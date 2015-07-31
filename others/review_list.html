@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<title>検討中リスト｜レクチャークリップ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="all">
+<meta property="og:title" content="レクチャークリップ">
+<meta property="og:type" content="website">
+<meta property="og:url" content="./">
+<meta property="og:image" content="img/common/icon_facebook.jpg">
+<link rel="shortcut icon" href="img/common/favicon.ico">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/page.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href="css/jquery.bxslider.css" rel="stylesheet">
+<!--[if lte IE 9]>
+<script src="js/html5shiv.js"></script>
+<!--<![endif]-->
+<script>
+var ua, isIE, array, version;
+ 
+// UserAgetn を小文字に正規化
+ua = window.navigator.userAgent.toLowerCase();
+ 
+// IE かどうか判定
+isIE = (ua.indexOf('msie') >= 0 || ua.indexOf('trident') >= 0);
+ 
+// IE の場合、バージョンを取得
+if (isIE) {
+    document.documentElement.className += "ie";
+}
+
+</script>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/jquery.leanModal.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/common.js"></script>
+<!-- ▼グローバルメニュー固定 -->
+<script src="js/waypoints.min.js"></script>
+<script src="js/waypoints-sticky.min.js"></script>
+<script>
+$(function() {
+    $('.my-sticky-element').waypoint('sticky');
+});
+</script>
+<script type="text/javascript">
+$(function() {
+    $( 'a[rel*=leanModal]').leanModal({
+        top: 80,                     // モーダルウィンドウの縦位置を指定
+        overlay : 0.7,               // 背面の透明度 
+        closeButton: ".closeBtn"  // 閉じるボタンのCSS classを指定
+    });
+}); 
+</script>
+</head>
+
+<body class="review_list">
+<div id="wrap">
+	
+	<header>
+		<div class="inner">
+			<h1><a href="./"><img src="img/common/logo.gif" alt="レクチャークリップ"></a></h1>
+			<nav id="hmenu">
+				<ul class="clearfix">
+					<li><a href="#">LecutreClipとは</a></li>
+					<li><a href="#">ご利用方法</a></li>
+					<li><a rel="leanModal" href="#m_createCourse">コース作成</a></li>
+					<li><a href="#">ヘルプ</a></li>
+				</ul>
+			</nav>
+			<ul id="hbtns" class="clearfix">
+				<li class="cart"><a href="cart.html"><span class="icon-shopping2"></span>カートを見る</a></li>
+				<li class="loginInfo"><a href="profile_edit.html"><span><img src="img/common/thum_user.jpg" alt="栗富 太郎太郎"></span>栗富 太郎太郎</a></li>
+			</ul>
+		</div>
+	</header><!-- /header -->
+	
+	<nav id="gnav" class="my-sticky-element">
+		<ul class="clearfix inner">
+			<li class="home"><a href="./"><span class="icon-home2"><img src="img/common/logo_h.gif" alt="レクチャークリック"></span></a></li>
+			<li><a href="category.html">カテゴリー</a>
+				<ul>
+					<li><a href="category.html">テクノロジー・IT</a></li>
+					<li><a href="category.html">ビジネススキル</a></li>
+					<li><a href="category.html">企業・経営</a></li>
+					<li><a href="category.html">政治・経済</a></li>
+					<li><a href="category.html">デザイン・CG</a></li>
+					<li><a href="category.html">教養・教育・語学</a></li>
+					<li><a href="category.html">健康・スポーツ</a></li>
+					<li><a href="category.html">趣味</a></li>
+				</ul>
+			</li>
+			<li><a href="free.html">無料</a></li>
+			<li><a href="top_chart.html">トップチャート</a></li>
+			<li><a href="new.html">新着</a></li>
+			<li><a href="mypage.html">マイページ</a></li>
+		</ul>
+	</nav><!-- /#gnav -->
+			
+	<div id="contents" class="clearfix">
+		<div class="inner">
+			
+			<div id="mainContents" class="clearfix">
+				<section>
+					<h2 class="pageTitle">検討中リスト</h2>
+					<form action="#">
+						<div class="categoryBox">
+							<dl>
+								<dt>表示項目</dt>
+								<dd id="categoryName">すべて</dd>
+							</dl>
+							<div class="table">
+								<div class="cell">
+									<p>カテゴリー選択</p>
+									<select id="selectCategory" name="selectCategory" class="category">
+										<option value="すべて" selected>すべて</option>
+										<option value="教養・教育・語学">教養・教育・語学</option>
+										<option value="ビジネススキル">ビジネススキル</option>
+										<option value="企業・経営">企業・経営</option>
+										<option value="テクノロジー・IT">テクノロジー・IT</option>
+										<option value="デザイン・CG">デザイン・CG</option>
+									</select>
+								</div><!-- /[div.cell] -->
+								<div class="cell">
+									<p>並び替え</p>
+									<select id="sortList" name="sortList" class="day">
+										<option value="1" selected>日付（降順）</option>
+										<option value="2">日付（昇順）</option>
+										<option value="3" selected>カテゴリ（降順）</option>
+										<option value="4">カテゴリ（昇順）</option>
+									</select>
+								</div><!-- /[div.cell] -->
+								<div class="search">
+									<p>キーワード検索</p>
+									<input type="text" id="search_txt" name="search_txt" class="textBox"><input type="button" value="検索" class="btn" onClick="javascript:searchJSON();">
+								</div>
+							</div><!-- /[div.table] -->
+							<div class="serch">
+								<input type="button" value="初期状態に戻す" onClick="javascript:initView();" class="cell">
+								<input id="loadflg" name="loadflg" type="hidden" value="0">
+							</div><!-- /[div.serch] -->
+						</div><!-- /[div.categoriBox] -->
+					</form>
+					<div class="selection table">
+						<p class="cell selectionL"><a id="selection_course" href="javascript:init(0); typeOver('selection_course');" class="active">コース</a></p>
+						<p class="cell selectionR"><a id="selection_lecture" href="javascript:init(1); typeOver('selection_lecture');">レクチャー</a></p>
+					</div><!-- /[div.selection] -->
+
+					<table id="result_list"></table>
+					<div class="pager"></div><!-- /[div.pager] -->
+
+				</section><!-- /#lecture -->
+
+			</div><!-- /#mainContents -->
+			
+			<div id="subContents">
+				<aside class="unit">
+					<form>
+					<div class="search">
+						<input type="text" id="search_txt" name="search_txt" class="textBox"><input type="button" value="検索" class="btn" onClick="javascript:searchJSON();">
+					</div>
+					</form>
+				</aside>
+				<ul class="unit">
+					<li><a href="new.html">新着おすすめ</a></li>
+					<li><a href="free.html">無料レクチャー</a></li>
+					<li><a href="top_chart.html">トップチャート</a></li>
+				</ul>
+				<dl class="unit acMenu">
+					<dt>カテゴリー</dt>
+					<dd>
+						<ul>
+							<li><a href="category.html">テクノロジー・IT</a></li>
+							<li><a href="category.html">ビジネススキル</a></li>
+							<li><a href="category.html">企業・経営</a></li>
+							<li><a href="category.html">政治・経済</a></li>
+							<li><a href="category.html">デザイン・CG</a></li>
+							<li><a href="category.html">教養・教育・語学</a></li>
+							<li><a href="category.html">健康・スポーツ</a></li>
+							<li><a href="category.html">趣味</a></li>
+						</ul>
+					</dd>
+				</dl><!-- /.acMenu -->
+				<div class="mypage">
+					<ul class="unit">
+						<li class="ttl"><a href="mypage.html">マイページ</a></li>
+						<li class="profile"><a href="profile_edit.html">プロフィール変更</a></li>
+					</ul>
+					<ul class="unit">
+						<li><a href="purchase_list.html">購入済みのコース</a></li>
+						<li><a href="review_list.html" class="active">検討中リスト</a></li>
+						<li><a href="#">クリップ</a></li>
+					</ul>
+					<ul class="unit">
+						<li><a href="create_course.html">作成コース</a></li>
+					</ul>
+				</div><!-- /[div.mypage] -->
+			</div><!-- /#subContents -->
+			
+		</div><!-- /.inner -->
+		
+	</div><!-- /#contents -->
+	
+	<footer>
+		<div class="inner clearfix">
+			<p><a href="./"><img src="img/common/logo_f.gif" alt="レクチャークリップ"></a></p>
+			<nav id="fnav" class="clearfix">
+				<dl class="sns">
+					<dt>Official Account</dt>
+					<dd>
+						<ul class="clearfix">
+							<li><span class="fa fa-facebook-square fa-lg"></span></li>
+							<li><span class="fa fa-twitter fa-lg"></span></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="about">
+					<dt>LectureClipとは</dt>
+					<dd>
+						<ul>
+							<li><a href="#">ご利用方法</a></li>
+							<li><a href="#">受講の仕方</a></li>
+							<li><a href="#">コースの作り方</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="courseSearch">
+					<dt>コース検索</dt>
+					<dd>
+						<ul>
+							<li><a href="category.html">カテゴリー</a></li>
+							<li><a href="free.html">無料</a></li>
+							<li><a href="top_chart.html">トップチャート</a></li>
+							<li><a href="new.html">新着</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="regist_mypage">
+					<dt>会員登録・マイページ</dt>
+					<dd class="clearfix">
+						<ul>
+							<li><a rel="leanModal" href="#m_registration">会員登録（無料）</a></li>
+							<li><a rel="leanModal" href="#m_login">ログイン</a></li>
+						</ul>
+						<ul>
+							<li><a href="profile_edit.html">プロフィール編集</a></li>
+							<li><a href="purchase_list.html">購入済みのコース</a></li>
+							<li><a href="review_list.html">検討中リスト</a></li>
+							<li><a href="create_course.html">作成コース</a></li>
+						</ul>
+						<ul>
+							<li><a rel="leanModal" href="#m_createCourse">コース作成</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</nav>
+			<ul id="fmenu" class="clearfix">
+				<li><a href="#">サイトマップ</a></li>
+				<li><a href="#">運営会社情報</a></li>
+				<li><a href="#">利用規約</a></li>
+				<li><a href="#">ヘルプ</a></li>
+				<li><a href="#">よくあるご質問</a></li>
+				<li><a href="#">お問い合わせ</a></li>
+				<li><a href="#">プライバシーポリシー</a></li>
+			</ul>
+		</div>
+		<p id="copyright">&copy; 2014 ./ All Rights Reserved.</p>
+	</footer><!-- /footer -->
+	
+</div><!-- /#wrap -->
+
+<p id="pagetop"><a href="#wrap"><img src="img/common/pagetop.png" alt="ページトップへ"></a></p>
+
+
+<!-- ▼モーダルウィンドウ設置 -->
+<div class="overlay"></div>
+
+<div id="m_registration" class="modal">
+	<div class="modalHead">
+	    <strong>新規登録</strong>
+		<a href="javascript:;" class="closeBtn btn"><i class="fa fa-times"></i></a>
+	</div><!-- /[div.modalHead] -->
+	<div class="modalMain table">
+		<div class="cell loginFbWrapper">
+			<p>Facebookアカウントでログイン</p>
+			<p class="btn"><a href="javascript:;"><img src="img/common/login_fb_btn.gif" width="240" height="45" alt=""></a></p>
+		</div><!-- /[div.float_l] -->
+		<div class="cell formWrapper">
+			<form action="#">
+				<p><input type="text" name="userMail" class="userMail" size="15" placeholder="ID（メールアドレス）"></p>
+				<p><input type="text" name="userName" class="userName" size="15" placeholder="ユーザー名"></p>
+				<p><input type="password" name="pass" class="pass" size="15" placeholder="パスワード"></p>
+				<p><input type="password" name="passConfirm " class="pass" size="15" placeholder="パスワード(確認用)"></p>
+				<div class="align_c">
+					<p><input type="checkbox" name="flgAgreement" value="on" class="check" id="check"><label for="check"><a href="#">利用規約</a>に同意する</label></p>
+					<p><input type="submit" value="登録する"></p>
+				</div><!-- /[div.align_c] -->
+
+			</form>
+		</div><!-- /[div.float_r] -->
+	</div><!-- /[div.clearfix] -->
+</div><!-- /[div#modal.modal] -->
+
+<div id="m_login" class="modal">
+	<div class="modalHead">
+	    <strong>ログイン</strong>
+		<a href="javascript:;" class="closeBtn btn"><i class="fa fa-times"></i></a>
+	</div><!-- /[div.modalHead] -->
+	<div class="modalMain table">
+		<div class="cell loginFbWrapper">
+			<p>Facebookアカウントでログイン</p>
+			<p class="btn"><a href="javascript:;"><img src="img/common/login_fb_btn.gif" width="240" height="45" alt=""></a></p>
+		</div><!-- /[div.float_l] -->
+		<div class="cell formWrapper">
+			<form method="post" name="lc_login_m" id="lc_login_m" action="javascript:;" onSubmit="return lc_LoginCheck('UserMail_m', 'UserPass_m');">
+				<p><input type="text" name="UserMail_m" class="userMail" size="15" placeholder="ID（メールアドレス）"></p>
+				<p><input type="password" name="UserPass_m" class="pass" size="15" placeholder="パスワード"></p>
+				<div class="align_c">
+					<p><input type="submit" value="ログイン"></p>
+					<p><a rel="leanModal" href="#m_registration" onClick="javascript:displayControl('#m_login', '#lean_overlay', '', '', 0);">新規登録</a>　　　<a rel="leanModal" href="#m_forgot" onClick="javascript:displayControl('#m_login', '#lean_overlay', '', '', 0);">パスワードを忘れた方はこちら</a></p>
+				</div><!-- /[div.align_c] -->
+
+			</form>
+		</div><!-- /[div.float_r] -->
+	</div><!-- /[div.clearfix] -->
+</div><!-- /[div#modal.modal] -->
+
+<div id="m_forgot" class="modal">
+	<div class="modalHead"> <strong>パスワードを忘れた方</strong>
+		<a href="javascript:;" class="closeBtn btn"><i class="fa fa-times"></i></a>
+	</div><!-- /[div.modalHead] -->
+	<div class="generalMain">
+		<p class="txt">ご登録のメールアドレスを入力してください。<br>パスワードの再登録のご案内メールを送信します。</p>
+		<form action="password.html" class="mailAdd">
+			<dl>
+				<dt>メールアドレス</dt>
+				<dd>
+					<input type="text" name="UserMail_forgot" class="">
+				</dd>
+			</dl>
+			<p class="btn btn_red">
+				<input type="submit" name="submit" value="送信">
+			</p>
+		</form>
+	</div><!-- /[div.generalMain] -->
+</div><!-- /[div#modal.modal] -->
+
+<div id="m_createCourse" class="modal">
+	<div class="modalHead"> <strong>コースを作成</strong>
+		<a href="javascript:;" class="closeBtn btn"><i class="fa fa-times"></i></a>
+	</div><!-- /[div.modalHead] -->
+	<div class="generalMain">
+		<p class="txt">新しく作成するコース名を入力してください。</p>
+		<form action="cl_upload.html" class="mailAdd">
+			<dl>
+				<dt>コース名</dt>
+				<dd>
+					<input type="text" name="CourseName" class="">
+				</dd>
+			</dl>
+			<p class="btn btn_red">
+				<input type="submit" name="submit" value="新規作成">
+			</p>
+		</form>
+	</div><!-- /[div.generalMain] -->
+</div><!-- /[div#modal.modal] -->
+
+<script type="text/javascript">
+
+//==================================================
+//JSON処理
+//==================================================
+
+//JSON配列のソート処理
+var sort_by = function(field, reverse, primer){
+	reverse = (reverse) ? -1 : 1;
+	return function(a,b){
+		a = a[field];
+		b = b[field];
+		if (typeof(primer) != 'undefined'){
+			a = primer(a);
+			b = primer(b);
+		}
+		if (a<b) return reverse * -1;
+		if (a>b) return reverse * 1;
+		return 0;
+	}
+}
+
+var $resultHTML=$("#result_list");
+var $selectCategory=$("#selectCategory");
+var arr=[];
+var alldata=[]; //すべてのJSONデータ
+var filterdata=[]; //フィルタしたJSONデータ
+var searchdata=[]; //検索したJSONデータ
+var ex_searchdata=[]; //カテゴリで絞りこまれたJSONデータ
+
+init(0);
+
+function init(pathflg){
+	
+	var filepath = "";
+	var coursePath = './json/review_course.json';
+	var lecturePath = './json/review_lecture.json';
+	
+	if(pathflg == 0){
+		filepath = coursePath;
+	} else if(pathflg == 1) {
+		filepath = lecturePath;
+	} else {
+		alert('該当するデータがありません');
+	}
+	
+	$("#loadflg").val(pathflg);
+	
+	$.getJSON(filepath, initOutput);
+}
+
+//初期の関数
+function initOutput(data){
+	
+	alldata = data;
+	
+	//最初に読み込んだときは全部標示する
+	filterdata = alldata;
+	searchdata = alldata;
+	ex_searchdata = alldata;
+	
+	//表示させる
+	display(alldata, 3, '', 0);
+	
+	console.log(alldata);
+
+}
+
+//HTMLの出力
+function display(arr, sort_flg, paging, pagingswitch){
+	
+	if(arr == ""){
+		arr = ex_searchdata;
+	}
+	
+	//ループ用変数の初期化
+	var loopcount = 0;
+	var j = 0;
+	
+	//リスト書き出し用HTMLの初期化
+	$resultHTML.empty();
+	
+	if(sort_flg == 1){
+		arr.sort(sort_by('regdate', true, parseInt)); //日付降順
+	} else if(sort_flg == 2) {
+		arr.sort(sort_by('regdate', false, parseInt));//日付昇順
+	} else if(sort_flg == 3) {
+		arr.sort(sort_by('catname', true, function(a){return a.toUpperCase()}));//カテゴリ降順
+	} else if(sort_flg == 4) {
+		arr.sort(sort_by('catname', false, function(a){return a.toUpperCase()}));//カテゴリ昇順
+	}
+	
+	//ループ回数の設定
+	if(paging == undefined){
+
+		if(arr.length > loopcount){
+			
+			loopcount = 6;
+			
+		} else {
+			loopcont = arr.length;
+			
+		}
+		
+		//ループの開始番号
+		j = 0;
+		
+	} else {
+		
+		if(arr.length - (6 * paging) > 6){
+			
+			loopcount = 6;
+			
+		} else {
+			
+			loopcount = arr.length - (6 * paging);
+			
+		}
+		
+		//ループの開始番号
+		j = 6 * paging;
+	}
+	
+	//リスト出力用変数初期化
+	var output_list = "";
+	
+	output_list = "<tbody>";
+	
+	//コース・レクターの出力切り替え
+	if($("#loadflg").val() == 0){
+		
+		//リスト表示用HTMLの生成
+		for (i=0; i<loopcount; i++) {
+			
+			var k = i + j;
+			var l = k + 1;
+			
+			output_list += '<tr>';
+			output_list += '<th scope="row" class="number">' + l + '</th>';
+//			output_list += '<td class="img"><img src="img/other/' + arr[k].cimg + '" width="192" height="108" alt=""></span></td>';
+			output_list += '<td class="img"><img src="img/other/img_thumb01.jpg" width="192" height="108" alt=""></span></td>';
+			output_list += '<td class="content">';
+			output_list += '<dl>';
+			output_list += '<dt class="ttl">' + arr[k].cname + '</dt>';
+			output_list += '<dd class="name">講師名<span>' + arr[k].tname + '</span></dd>';
+			
+			var cDetailTxt = checkTxtByte(arr[k].cdetail);
+			
+			output_list += '<dd class="txt">' + cDetailTxt + '</dd>';
+			output_list += '<dd class="table">';
+			output_list += '<dl class="cell register clearfix">';
+			output_list += '<dt>登録レクチャー数</dt>';
+			output_list += '<dd>' + arr[k].leccnt + '</dd>';
+			output_list += '</dl>';
+			output_list += '<p class="cell btn btn_black"><a href="course_detail.html" class="w150">コース詳細へ</a></p>';
+			output_list += '</dd>';
+			output_list += '<td class="purchase">';
+			output_list += '<p class="price"><span>' + arr[k].price + '</span>円</p>';
+			output_list += '<p class="btn_yellow"><a href="#" class="w110 fs14">カートに入れる</a></p>';
+			output_list += '</td>';
+			output_list += '</tr>';
+	
+		}
+	
+	} else {
+		
+		//リスト表示用HTMLの生成
+		for (i=0; i<loopcount; i++) {
+			
+			var k = i + j;
+			var l = k + 1;
+			
+			output_list += '<tr>';
+			output_list += '<th scope="row" class="number">' + l + '</th>';
+//			output_list += '<td class="img"><img src="img/other/' + arr[k].cimg + '" width="192" height="108" alt=""></span></td>';
+			output_list += '<td class="img"><img src="img/other/img_thumb01.jpg" width="192" height="108" alt=""></span></td>';
+			output_list += '<td class="content">';
+			output_list += '<dl>';
+			output_list += '<dt class="ttl">' + arr[k].lname + '</dt>';
+			output_list += '<dd class="lname">' + arr[k].cname + '</dd>';
+			output_list += '<dd class="name">講師名<span>' + arr[k].tname + '</span></dd>';
+			output_list += '<dd class="txt">' + arr[k].cdetail + '</dd>';
+			output_list += '<dd class="table">';
+			output_list += '<p class="cell btn btn_black"><a href="st_mashup.html"  class="w150">レクチャー詳細へ</a></p>';
+			output_list += '</dd>';
+			output_list += '<td class="purchase">';
+			output_list += '<p class="price"><span>' + arr[k].price + '</span>円</p>';
+			output_list += '<p class="btn_yellow"><a href="#" class="w110 fs14">カートに入れる</a></p>';
+			output_list += '</td>';
+			output_list += '</tr>';
+	
+		}
+		
+	}
+	
+	output_list += "</tbody>";
+	
+	//リストの出力
+	$resultHTML.append(output_list);
+	
+	//ページングの出力
+	if(pagingswitch == 0){
+		outpuPaging(arr, paging);
+	}
+	
+}
+
+//ページングの出力処理
+function outpuPaging(arr, paging){
+	
+	var $pagingHTML=$(".pager");
+	
+	//ページング書き出し用HTMLの初期化
+	$pagingHTML.empty();
+	
+	//ページング出力用変数初期化
+	var output_paging = "";
+	
+	//ページングオーバー設定
+	var over_txt = "";
+	
+	//ページング表示用HTMLの生成
+	output_paging = '<ul>';
+	
+	//ページング出力ループ回数
+	var pageloopcount = Math.ceil(arr.length / 6);
+	
+	if(paging == undefined){
+		paging = 0;
+	} 
+	
+	pageloopcount = pageloopcount - paging;
+	
+	if(pageloopcount > 5){
+		pageloopcount = 5;
+	}
+	
+	var pagingprev = paging - 5;
+	
+	//前ページングの表示
+	if(paging >= 5){
+		output_paging += '<li><a href="javascript:display(' + "'',''," + pagingprev + ',0);"><i class="fa fa-angle-left"></i></a></li>';
+	}
+	
+	for(i=0; i<pageloopcount; i++){
+		
+		var j = i + 1;
+		var k = Number(paging) + i;
+		var l = Number(paging) + i + 1;
+		
+		if(paging == k){
+			over_txt = ' class="active"';
+		} else {
+			over_txt = '';
+		}
+		
+		output_paging += '<li><a id="pagingid' + k + '" href="javascript:display(' + "'',''," + k + '); pagingOver(' + "'pagingid" + k + "'" + ')"' + over_txt + '>' + l + '</a></li>';
+		
+	}
+	
+	//次ページングの表示
+	if(pageloopcount >= 5){
+		output_paging += '<li><a href="javascript:display(' + "'',''," + l + ',0);"><i class="fa fa-angle-right"></i></a></li>';
+	}
+	
+	output_paging += '</ul>';
+	
+	//ページング部分の出力
+	$pagingHTML.append(output_paging);
+	
+}
+
+
+//レクチャー・コースのオーバー設定
+function typeOver(idname){
+	$(".selection p a").removeClass('active');
+	$("#" + idname).addClass('active');
+	initView();
+}
+
+//ページングのオーバー設定
+function pagingOver(idname){
+	$(".pager ul li a").removeClass('active');
+	$("#" + idname).addClass('active');
+}
+
+//配列の検索
+function searchJSON(){
+	
+	var stxt = $("#search_txt").val();
+	
+	//フィルタ用配列の初期化
+	searchdata = [];
+	ex_searchdata = [];
+	
+	if(stxt === ""){
+	
+		searchdata = alldata;
+		ex_searchdata = alldata;
+	
+	} else {
+		
+		searchdata = $.grep(alldata,function(n){
+			
+			if($("#loadflg").val() == 0){
+			
+				if (n.cname.indexOf(stxt) !== -1) {
+					return n.cname;
+				}
+			
+			} else if($("#loadflg").val() == 1){
+				
+				if (n.cname.indexOf(stxt) !== -1 || n.lname.indexOf(stxt) !== -1) {
+					return n.cname;
+				}
+				
+			}
+		});
+		
+		ex_searchdata = searchdata;
+	}
+	
+	$("#categoryName").html('すべて')
+	createSelector(searchdata);
+	display(searchdata, 3, '', 0);
+	
+}
+
+//初期表示
+function initView(){
+	
+	//フィルタ用配列の初期化
+	filterdata = [];
+	searchdata = [];
+	ex_searchdata = [];
+	
+	filterdata = alldata;
+	searchdata = alldata;
+	ex_searchdata = alldata;
+	
+	$("#categoryName").html('すべて')
+	createSelector(alldata);
+	display(alldata, 3, '', 0);
+	
+}
+
+//セレクタの生成
+function createSelector(arr){
+	
+	$selectCategory.empty();
+	
+	var cname_txt = "";
+	var sname_txt = "";
+	
+	$('#selectCategory').empty();
+	$('#sortList').empty();
+	
+	$('#selectCategory').append(
+		'<option value="すべて">すべて</option>'
+	)
+	
+	for(i=0; i < arr.length; i++){
+		
+		if(cname_txt != arr[i].catname){
+		
+			cname_txt = arr[i].catname;
+		
+			$('#selectCategory').append(
+				'<option value="' + arr[i].catname + '">' + arr[i].catname + '</option>'
+			);
+		}
+	
+	}
+	
+	$('#sortList').append(
+		'<option value="1">日付（降順）</option><option value="2">日付（昇順）</option><option value="3" selected>カテゴリ（降順）</option><option value="4">カテゴリ（昇順）</option>'
+	)
+	
+}
+
+
+//カテゴリ変更時に絞り込み
+$('select#selectCategory').change(function(){
+		
+	//セレクタの状態により絞り込み
+	var cate = $(this).val();
+	
+	//フィルタ用配列の初期化
+	ex_searchdata = [];
+	
+	if(cate === "すべて"){
+	
+		ex_searchdata = searchdata;
+	
+	} else {
+	
+		ex_searchdata = $.grep(searchdata,function(n){
+	
+			return n.catname === cate;
+		
+		});
+	}
+	
+	$("#categoryName").html(cate)
+	display(ex_searchdata, '', 0, 0);
+
+});
+
+//ソート条件変更時に絞り込み
+$('select#sortList').change(function(){
+	
+	var sortflg = $(this).val();
+	
+	display(ex_searchdata, sortflg, 0, 0);
+
+});
+
+</script>
+
+</body>
+</html>

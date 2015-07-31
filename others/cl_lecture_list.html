@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="UTF-8">
+        <title>作成済のレクチャー一覧｜レクチャークリップ</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="robots" content="all">
+        <meta property="og:title" content="レクチャークリップ">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="./">
+        <meta property="og:image" content="img/common/icon_facebook.jpg">
+        <link rel="shortcut icon" href="img/common/favicon.ico">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/page.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="css/jquery.bxslider.css" rel="stylesheet">
+        <!--[if lte IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <!--<![endif]-->
+        <script>
+            if (window.navigator.userAgent.toLowerCase().indexOf("msie") > -1) {
+                document.documentElement.className += 'ie';
+            }
+        </script>
+        <script src="js/jquery-1.10.1.min.js"></script>
+        <script src="js/jquery.leanModal.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/checkbox.js"></script>
+        <script src="js/common.js"></script>
+        <!-- ▼グローバルメニュー固定 -->
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/waypoints-sticky.min.js"></script>
+        <script>
+            $(function () {
+                $('.my-sticky-element').waypoint('sticky');
+            });
+        </script>
+        <script type="text/javascript">
+            $(function () {
+                $('a[rel*=leanModal]').leanModal({
+                    top: 80, // モーダルウィンドウの縦位置を指定
+                    overlay: 0.7, // 背面の透明度 
+                    closeButton: ".closeBtn"  // 閉じるボタンのCSS classを指定
+                });
+            });
+        </script></head>
+
+    <body class="cl_lecture_list">
+        <div id="wrap">
+
+            <header>
+                <div class="inner">
+                    <h1><a href="./"><img src="img/common/logo.gif" alt="レクチャークリップ"></a></h1>
+                    <nav id="hmenu">
+                        <ul class="clearfix">
+                            <li><a href="#">LecutreClipとは</a></li>
+                            <li><a href="#">ご利用方法</a></li>
+                            <li><a rel="leanModal" href="#m_createCourse">コース作成</a></li>
+                            <li><a href="#">ヘルプ</a></li>
+                        </ul>
+                    </nav>
+                    <ul id="hbtns" class="clearfix">
+                        <li class="cart"><a href="cart.html"><span class="icon-shopping2"></span>カートを見る</a></li>
+                        <li class="loginInfo"><a href="profile_edit.html"><span><img src="img/common/thum_user.jpg" alt="栗富 太郎太郎"></span>栗富 太郎太郎</a></li>
+                    </ul>
+                </div>
+            </header><!-- /header -->
+            <nav id="gnav" class="my-sticky-element">
+                <ul class="clearfix inner">
+                    <li class="home"><a href="./"><span class="icon-home2"><img src="img/common/logo_h.gif" alt="レクチャークリック"></span></a></li>
+                    <li><a href="category.html">カテゴリー</a>
+                        <ul>
+                            <li><a href="category.html">テクノロジー・IT</a></li>
+                            <li><a href="category.html">ビジネススキル</a></li>
+                            <li><a href="category.html">企業・経営</a></li>
+                            <li><a href="category.html">政治・経済</a></li>
+                            <li><a href="category.html">デザイン・CG</a></li>
+                            <li><a href="category.html">教養・教育・語学</a></li>
+                            <li><a href="category.html">健康・スポーツ</a></li>
+                            <li><a href="category.html">趣味</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="free.html">無料</a></li>
+                    <li><a href="top_chart.html">トップチャート</a></li>
+                    <li><a href="new.html">新着</a></li>
+                    <li><a href="mypage.html">マイページ</a></li>
+                </ul>
+            </nav><!-- /#gnav -->
+
+            <div id="contents" class="clearfix column1">
+                <div class="inner">
+                    <section class="clWrapper">
+                        <div class="clTtl table">
+                            <h2 class="title cell">作成済のレクチャー一覧</h2>
+                            <div class="cell align_r">
+                                <dl class="lecture_num">
+                                    <dt>レクチャー数</dt>
+                                    <dd>7</dd>
+                                </dl>
+                            </div><!-- /[div.cell] -->
+                        </div><!-- /[div.stTtl] -->
+
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="number">1</td>
+                                    <td class="icon"><span class="fa fa-film fa-6x"></span></td>
+                                    <td class="content">
+                                        <p class="ttl"><span class="fs16">ビジネス現場の英語表現 Vol.1 マーケティング</span><br>LECTURE1 英文Eメールの基本</p>
+                                        <p class="time">時間<span>5:20</span></p>
+                                    </td>
+                                    <td class="price"><span>500</span>円</dd>
+                                    </td>
+                                    <td class="clearfix">
+                                        <p class="btn_yellow float_l"><a href="cl_upload.html">編集</a></p>
+                                        <p class="btn btn_black float_r"><a href="javascript:confirm_diag('削除してもよろしいですか？', 0);">削除</a></p>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="number">2</td>
+                                    <td class="icon"><span class="fa fa-video-camera fa-6x"></span></td>
+                                    <td class="content">
+                                        <p class="ttl"><span class="fs16">ビジネス現場の英語表現 Vol.1 マーケティング</span><br>LECTURE1 英文Eメールの基本</p>
+                                        <p class="time">時間<span>5:20</span></p>
+                                    </td>
+                                    <td class="price"><span>500</span>円</dd>
+                                    </td>
+                                    <td class="clearfix">
+                                        <p class="btn_yellow float_l"><a href="cl_upload.html">編集</a></p>
+                                        <p class="btn btn_black float_r"><a href="javascript:confirm_diag('削除してもよろしいですか？', 0);">削除</a></p>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="number">3</td>
+                                    <td class="icon"><span class="fa fa-file-pdf-o fa-6x"></span></td>
+                                    <td class="content">
+                                        <p class="ttl"><span class="fs16">ビジネス現場の英語表現 Vol.1 マーケティング</span><br>LECTURE1 英文Eメールの基本</p>
+                                    </td>
+                                    <td class="price"><span>500</span>円</dd>
+                                    </td>
+                                    <td class="clearfix">
+                                        <p class="btn_yellow float_l"><a href="cl_upload.html">編集</a></p>
+                                        <p class="btn btn_black float_r"><a href="javascript:confirm_diag('削除してもよろしいですか？', 0);">削除</a></p>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="number">4</td>
+                                    <td class="icon"><span class="fa fa-film fa-6x"></span></td>
+                                    <td class="content">
+                                        <p class="ttl"><span class="fs16">ビジネス現場の英語表現 Vol.1 マーケティング</span><br>LECTURE1 英文Eメールの基本</p>
+                                        <p class="time">時間<span>5:20</span></p>
+                                    </td>
+                                    <td class="price"><span>500</span>円</dd>
+                                    </td>
+                                    <td class="clearfix">
+                                        <p class="btn_yellow float_l"><a href="cl_upload.html">編集</a></p>
+                                        <p class="btn btn_black float_r"><a href="javascript:confirm_diag('削除してもよろしいですか？', 0);">削除</a></p>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btnBox">
+                            <p class="btn btn_black b01"><a href="cl_upload.html" class="fs18 w200 h45">レクチャー追加</a></p>
+                            <p class="btn btn_red b03"><a href="course_info.html" class="fs18 w200 h45">コース登録</a></p>
+                        </div><!-- /[div.btnBox] -->
+
+                    </section>
+
+                </div><!-- /.inner -->
+
+            </div><!-- /#contents -->
+
+            <footer>
+                <div class="inner clearfix">
+                    <p><a href="./"><img src="img/common/logo_f.gif" alt="レクチャークリップ"></a></p>
+                    <nav id="fnav" class="clearfix">
+                        <dl class="sns">
+                            <dt>Official Account</dt>
+                            <dd>
+                                <ul class="clearfix">
+                                    <li><span class="fa fa-facebook-square fa-lg"></span></li>
+                                    <li><span class="fa fa-twitter fa-lg"></span></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="about">
+                            <dt>LectureClipとは</dt>
+                            <dd>
+                                <ul>
+                                    <li><a href="#">ご利用方法</a></li>
+                                    <li><a href="#">受講の仕方</a></li>
+                                    <li><a href="#">コースの作り方</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="courseSearch">
+                            <dt>コース検索</dt>
+                            <dd>
+                                <ul>
+                                    <li><a href="category.html">カテゴリー</a></li>
+                                    <li><a href="free.html">無料</a></li>
+                                    <li><a href="top_chart.html">トップチャート</a></li>
+                                    <li><a href="new.html">新着</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="regist_mypage">
+                            <dt>会員登録・マイページ</dt>
+                            <dd class="clearfix">
+                                <ul>
+                                    <li><a rel="leanModal" href="#m_registration">会員登録（無料）</a></li>
+                                    <li><a rel="leanModal" href="#m_login">ログイン</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="profile_edit.html">プロフィール編集</a></li>
+                                    <li><a href="purchase_list.html">購入済みのコース</a></li>
+                                    <li><a href="review_list.html">検討中リスト</a></li>
+                                    <li><a href="create_course.html">作成コース</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a rel="leanModal" href="#m_createCourse">コース作成</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </nav>
+                    <ul id="fmenu" class="clearfix">
+                        <li><a href="#">サイトマップ</a></li>
+                        <li><a href="#">運営会社情報</a></li>
+                        <li><a href="#">利用規約</a></li>
+                        <li><a href="#">ヘルプ</a></li>
+                        <li><a href="#">よくあるご質問</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                        <li><a href="#">プライバシーポリシー</a></li>
+                    </ul>
+                </div>
+                <p id="copyright">&copy; 2014 ./ All Rights Reserved.</p>
+            </footer><!-- /footer -->
+
+        </div><!-- /#wrap -->
+
+        <p id="pagetop"><a href="#wrap"><img src="img/common/pagetop.png" alt="ページトップへ"></a></p>
+
+
+        <!-- ▼モーダルウィンドウ設置 -->
+        <div class="overlay"></div>
+
+        <div id="m_registration" class="modal">
+            <div class="modalHead">
+                <strong>新規登録</strong>
+                <a href="javascript:;" class="closeBtn btn"><i class="fa fa-times"></i></a>
+            </div><!-- /[div.modalHead] -->
+            <div class="modalMain table">
+                <div class="cell loginFbWrapper">
+                    <p>Facebookアカウントでログイン</p>
+                    <p class="btn"><a href="javascript:;"><img src="img/common/login_fb_btn.gif" width="240" height="45" alt=""></a></p>
+                </div><!-- /[div.float_l] -->
+                <div class="cell formWrapper">
+                    <form action="#">
+                        <p><input type="text" name="userMail" class="userMail" size="15" placeholder="ID（メールアドレス）"></p>
+                        <p><input type="text" name="userName" class="userName" size="15" placeholder="ユーザー名"></p>
+                        <p><input type="password" name="pass" class="pass" size="15" placeholder="パスワード"></p>
+                        <p><input type="password" name="passConfirm " class="pass" size="15" placeholder="パスワード(確認用)"></p>
+                        <div class="align_c">
+                            <p><input type="checkbox" name="flgAgreement" value="on" class="check" id="check"><label for="check"><a href="#">利用規約</a>に同意する</label></p>
+                            <p><input type="submit" value="登録する"></p>
+                        </div><!-- /[div.align_c] -->
+
+                    </form>
+                </div><!-- /[div.float_r] -->
+            </div><!-- /[div.clearfix] -->
+        </div><!-- /[div#modal.modal] -->
+
+        <div id="m_login" class="modal">
+            <div class="modalHead">
+                <strong>ログイン</strong>
+                <a href="javascript:;" class="closeBtn btn"><i class="fa fa-times"></i></a>
+            </div><!-- /[div.modalHead] -->
+            <div class="modalMain table">
+                <div class="cell loginFbWrapper">
+                    <p>Facebookアカウントでログイン</p>
+                    <p class="btn"><a href="javascript:;"><img src="img/common/login_fb_btn.gif" width="240" height="45" alt=""></a></p>
+                </div><!-- /[div.float_l] -->
+                <div class="cell formWrapper">
+                    <form method="post" name="lc_login_m" id="lc_login_m" action="javascript:;" onSubmit="return lc_LoginCheck('UserMail_m', 'UserPass_m');">
+                        <p><input type="text" name="UserMail_m" class="userMail" size="15" placeholder="ID（メールアドレス）"></p>
+                        <p><input type="password" name="UserPass_m" class="pass" size="15" placeholder="パスワード"></p>
+                        <div class="align_c">
+                            <p><input type="submit" value="ログイン"></p>
+                            <p><a rel="leanModal" href="#m_registration" onClick="javascript:displayControl('#m_login', '#lean_overlay', '', '', 0);">新規登録</a>　　　<a rel="leanModal" href="#m_forgot" onClick="javascript:displayControl('#m_login', '#lean_overlay', '', '', 0);">パスワードを忘れた方はこちら</a></p>
+                        </div><!-- /[div.align_c] -->
+
+                    </form>
+                </div><!-- /[div.float_r] -->
+            </div><!-- /[div.clearfix] -->
+        </div><!-- /[div#modal.modal] -->
+
+        <div id="m_forgot" class="modal">
+            <div class="modalHead"> <strong>パスワードを忘れた方</strong>
+                <a href="javascript:;" class="closeBtn btn"><i class="fa fa-times"></i></a>
+            </div><!-- /[div.modalHead] -->
+            <div class="generalMain">
+                <p class="txt">ご登録のメールアドレスを入力してください。<br>パスワードの再登録のご案内メールを送信します。</p>
+                <form action="password.html" class="mailAdd">
+                    <dl>
+                        <dt>メールアドレス</dt>
+                        <dd>
+                            <input type="text" name="UserMail_forgot" class="">
+                        </dd>
+                    </dl>
+                    <p class="btn btn_red">
+                        <input type="submit" name="submit" value="送信">
+                    </p>
+                </form>
+            </div><!-- /[div.generalMain] -->
+        </div><!-- /[div#modal.modal] -->
+
+        <div id="m_createCourse" class="modal">
+            <div class="modalHead"> <strong>コースを作成</strong>
+                <a href="javascript:;" class="closeBtn btn"><i class="fa fa-times"></i></a>
+            </div><!-- /[div.modalHead] -->
+            <div class="generalMain">
+                <p class="txt">新しく作成するコース名を入力してください。</p>
+                <form action="cl_upload.html" class="mailAdd">
+                    <dl>
+                        <dt>コース名</dt>
+                        <dd>
+                            <input type="text" name="CourseName" class="">
+                        </dd>
+                    </dl>
+                    <p class="btn btn_red">
+                        <input type="submit" name="submit" value="新規作成">
+                    </p>
+                </form>
+            </div><!-- /[div.generalMain] -->
+        </div><!-- /[div#modal.modal] -->
+
+    </body>
+</html>

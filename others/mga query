@@ -1,0 +1,46 @@
+select 
+tbl_lc_course.cid as cid, 
+tbl_lc_course.catid as catid, 
+tbl_ut_course.stat as state, 
+tbl_lc_course.title as cname,
+concat(tbl_ut_user.name1, ' ', tbl_ut_user.name2) as tname,
+tbl_lc_course.price as price, ( SELECT catname from tbl_m_category WHERE catid = tbl_lc_course.catid ) as catname, tbl_ut_course.regdate
+from tbl_ut_course
+INNER JOIN tbl_lc_course ON tbl_ut_course.cid = tbl_lc_course.cid 
+INNER JOIN tbl_ut_user ON tbl_ut_course.uid = tbl_ut_user.uid
+where tbl_ut_course.con = "p" GROUP by tbl_ut_course.cid
+
+<?php 
+$data = array('tbl_lc_course.cid as cid', 
+'tbl_lc_course.catid as catid', 
+'tbl_ut_course.stat as state', 
+'tbl_lc_course.title as cname',
+'concat(tbl_ut_user.name1, " ", tbl_ut_user.name2) as tname',
+'tbl_lc_course.price as price', '( SELECT catname from tbl_m_category WHERE catid = tbl_lc_course.catid ) as catname', 'tbl_ut_course.regdate as regdate');
+$table = 'tbl_ut_course
+INNER JOIN tbl_lc_course ON tbl_ut_course.cid = tbl_lc_course.cid 
+INNER JOIN tbl_ut_user ON tbl_ut_course.uid = tbl_ut_user.uid';
+$where = 'where tbl_ut_course.con = "p" GROUP by tbl_ut_course.cid';
+foreach ($obj->select_w_join_2($data, $table, $where) as $s) {
+extract($s);
+$s[] = $s;
+//var_dump($details);
+file_put_contents('data.json',json_encode($s));
+} 
+?>
+
+
+SELECT 
+tbl_ut_lecture.cid as cid, 
+tbl_ut_lecture.lno as lid, 
+tbl_lc_lecture.prg_time as ltime,
+(SELECT title from tbl_lc_course where cid = tbl_ut_lecture.cid) as cname,
+(SELECT intro_data from tbl_lc_course where cid = tbl_ut_lecture.cid) as cdetails,
+(SELECT concat(name1, " " ,name2) from tbl_ut_user WHERE tbl_ut_user.uid = 			  tbl_lc_course.uid) as tname, 
+tbl_lc_lecture.price as price,
+tbl_lc_lecture.ltype as ltype,
+(SELECT catname from tbl_m_category WHERE catid = tbl_lc_course.catid) as catname,
+tbl_ut_lecture.regdate as regdate
+from tbl_ut_lecture 
+inner join tbl_lc_lecture on tbl_ut_lecture.lno = tbl_lc_lecture.lno
+inner join tbl_lc_course on tbl_ut_lecture.cid = tbl_lc_course.cid

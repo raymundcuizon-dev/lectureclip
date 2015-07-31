@@ -1,0 +1,1 @@
+<p>Sorry! But it seems you don't have permission to access this area.</p><a href="index.php">go to home</a>

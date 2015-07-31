@@ -1,0 +1,37 @@
+[
+    {
+        "cid": "2",
+        "cname": "fatima_course 2",
+        "catname": "Sample",
+        "cimg": "23b15723e8eeb0ee41ee2545a7a3905c.jpg",
+        "regdate": "30\/07\/2015",
+        "lastdate": "00\/00\/0000",
+        "lecture": [
+            {
+                "lid": "3",
+                "lname": "Fat Lecture",
+                "ltype": "pdf"
+            }
+        ]
+    },
+    {
+        "cid": "1",
+        "cname": "fatima_course",
+        "catname": "Sample",
+        "cimg": "6689eda3f6720f970b6577462161ca2c.jpg",
+        "regdate": "30\/07\/2015",
+        "lastdate": "00\/00\/0000",
+        "lecture": [
+            {
+                "lid": "1",
+                "lname": "Fatima Lecture",
+                "ltype": "pdf"
+            },
+            {
+                "lid": "2",
+                "lname": "Fatima_Lecture 2",
+                "ltype": "pdf"
+            }
+        ]
+    }
+]

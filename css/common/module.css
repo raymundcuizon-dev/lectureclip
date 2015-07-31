@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+/************************************************************************
+*	CSS information														*
+*	file name  :  module.css											*
+*	style info :  汎用スタイルの設定									*												
+************************************************************************/
+
+
+
+/*	Clearfix
+========================================== */
+/* clearfix：要素の末尾でfloatを解除する */
+.clearfix { *zoom: 1; }
+.clearfix:after { content: ''; display: block; clear: both; }
+
+
+/*	Invisible elements：要素を不可視にする
+========================================== */
+.hidden {
+	display: none;
+}
+
+
+/*	Float
+========================================== */
+.float_l { float: left; }
+.float_r { float: right; }
+
+
+/*	List style
+========================================== */
+.disc li { list-style: disc;}
+.circle li { list-style: circle;}
+.decimal li { list-style: decimal;}
+
+
+/* Text style
+========================================== */
+/* Font color */
+.red { color: #F00; }
+
+/* Font size */
+.fs10 { font-size: 10px; }
+.fs12 { font-size: 12px; }
+.fs14 { font-size: 14px; }
+.fs16 { font-size: 16px; }
+.fs18 { font-size: 18px; }
+.fs20 { font-size: 20px; }
+.fs24 { font-size: 24px; }
+.fs28 { font-size: 28px; }
+.fs32 { font-size: 32px; }
+.fs36 { font-size: 36px; }
+.fs48 { font-size: 48px; }
+
+/* Text align */
+.align_l { text-align: left; }
+.align_r { text-align: right; }
+.align_c { text-align: center; }
+
+
+/*	Margin
+========================================== */
+.mt0 { margin-top: 0; }
+.mt5 { margin-top: 5px; }
+.mt10 { margin-top: 10px; }
+.mt15 { margin-top: 15px; }
+.mt20 { margin-top: 20px; }
+.mt25 { margin-top: 25px; }
+.mt30 { margin-top: 30px; }
+.mt35 { margin-top: 35px; }
+.mt40 { margin-top: 40px; }
+.mt45 { margin-top: 45px; }
+.mt50 { margin-top: 50px; }
+.mt55 { margin-top: 55px; }
+.mt60 { margin-top: 60px; }
+.mt65 { margin-top: 65px; }
+.mt70 { margin-top: 70px; }
+.mt75 { margin-top: 75px; }
+.mt80 { margin-top: 80px; }
+.mt85 { margin-top: 85px; }
+.mt90 { margin-top: 90px; }
+.mt95 { margin-top: 95px; }
+.mt100 { margin-top: 100px; }
+
+.mb0 { margin-bottom: 0; }
+.mb5 { margin-bottom: 5px; }
+.mb10 { margin-bottom: 10px; }
+.mb15 { margin-bottom: 15px; }
+.mb20 { margin-bottom: 20px; }
+.mb25 { margin-bottom: 25px; }
+.mb30 { margin-bottom: 30px; }
+.mb35 { margin-bottom: 35px; }
+.mb40 { margin-bottom: 40px; }
+.mb45 { margin-bottom: 45px; }
+.mb50 { margin-bottom: 50px; }
+.mb55 { margin-bottom: 55px; }
+.mb60 { margin-bottom: 60px; }
+.mb65 { margin-bottom: 65px; }
+.mb70 { margin-bottom: 70px; }
+.mb75 { margin-bottom: 75px; }
+.mb80 { margin-bottom: 80px; }
+.mb85 { margin-bottom: 85px; }
+.mb90 { margin-bottom: 90px; }
+.mb95 { margin-bottom: 95px; }
+.mb100 { margin-bottom: 100px; }
+
+
+/*	Padding
+========================================== */
+.pt0 { padding-top: 0; }
+.pt5 { padding-top: 5px; }
+.pt10 { padding-top: 10px; }
+.pt15 { padding-top: 15px; }
+.pt20 { padding-top: 20px; }
+.pt25 { padding-top: 25px; }
+.pt30 { padding-top: 30px; }
+.pt35 { padding-top: 35px; }
+.pt40 { padding-top: 40px; }
+.pt45 { padding-top: 45px; }
+.pt50 { padding-top: 50px; }
+.pt55 { padding-top: 55px; }
+.pt60 { padding-top: 60px; }
+.pt65 { padding-top: 65px; }
+.pt70 { padding-top: 70px; }
+.pt75 { padding-top: 75px; }
+.pt80 { padding-top: 80px; }
+.pt85 { padding-top: 85px; }
+.pt90 { padding-top: 90px; }
+.pt95 { padding-top: 95px; }
+.pt100 { padding-top: 100px; }
+
+.pb0 { padding-bottom: 0; }
+.pb5 { padding-bottom: 5px; }
+.pb10 { padding-bottom: 10px; }
+.pb15 { padding-bottom: 15px; }
+.pb20 { padding-bottom: 20px; }
+.pb25 { padding-bottom: 25px; }
+.pb30 { padding-bottom: 30px; }
+.pb35 { padding-bottom: 35px; }
+.pb40 { padding-bottom: 40px; }
+.pb45 { padding-bottom: 45px; }
+.pb50 { padding-bottom: 50px; }
+.pb55 { padding-bottom: 55px; }
+.pb60 { padding-bottom: 60px; }
+.pb65 { padding-bottom: 65px; }
+.pb70 { padding-bottom: 70px; }
+.pb75 { padding-bottom: 75px; }
+.pb80 { padding-bottom: 80px; }
+.pb85 { padding-bottom: 85px; }
+.pb90 { padding-bottom: 90px; }
+.pb95 { padding-bottom: 95px; }
+.pb100 { padding-bottom: 100px; }
+
+
+/*	Width
+========================================== */
+.w60 { width: 60px; }
+.w80 { width: 80px; }
+.w90 { width: 90px; }
+.w100 { width: 100px; }
+.w110 { width: 110px; }
+.w120 { width: 120px; }
+.w130 { width: 130px; }
+.w140 { width: 140px; }
+.w150 { width: 150px; }
+.w160 { width: 160px; }
+.w180 { width: 180px; }
+.w200 { width: 200px; }
+.w220 { width: 220px; }
+.w240 { width: 240px; }
+.w260 { width: 260px; }
+.w280 { width: 280px; }
+.w300 { width: 300px; }
+.w320 { width: 320px; }
+.w340 { width: 340px; }
+.w360 { width: 360px; }
+.w370 { width: 370px; }
+.w380 { width: 380px; }
+.w390 { width: 390px; }
+.w400 { width: 400px; }
+.w420 { width: 420px; }
+.w440 { width: 440px; }
+.w460 { width: 460px; }
+.w480 { width: 480px; }
+.w500 { width: 500px; }
+
+/*	Height
+========================================== */
+.h36 { height: 36px !important; line-height: 36px !important; padding: 0 !important; }
+.h45 { height: 45px !important; line-height: 45px !important; padding: 0 !important; }
+.h50 { height: 50px !important; line-height: 50px !important; padding: 0 !important; }
+/*
+.h36 { height: 36px; }
+.h36 { height: 36px; }
+*/

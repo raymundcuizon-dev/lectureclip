@@ -1,0 +1,2041 @@
+@charset "UTF-8";
+
+/************************************************************************
+*	CSS information																												*
+*	file name  :  pege.css																								*
+*	style info :  ページ別スタイルの設定																	*												
+************************************************************************/
+
+
+
+/* ------------------------------------------------------
+	Top
+------------------------------------------------------ */
+.login_top .slider {
+	height: 302px;
+	background: #EEE;
+	z-index: 1;
+}
+
+
+
+/* ------------------------------------------------------
+	プロフィール編集
+------------------------------------------------------ */
+.profile_edit .password {
+	width: 280px;
+	float: left;
+}
+
+.profile_edit .btnArea {
+	float: right;
+}
+
+.profile_edit .btnArea .btn_black a,
+.profile_edit .btnArea2 .btn_black a {
+	width: 135px;
+}
+
+.profile_edit .thum {
+	width: 90px;
+	float: left;
+}
+
+.profile_edit .btnArea2 {
+	float: right;
+	text-align: right;
+}
+
+.profile_edit .btns .btn_red {
+	margin-top: 15px;
+}
+
+/* ------------------------------------------------------
+	コース詳細 , 購入済のもの
+------------------------------------------------------ */
+/* コース詳細 */
+.course_detail #mainContents {
+	width: 630px;
+}
+
+.course_detail #subContents {
+	width: 320px;
+}
+
+.course_detail #basicInfo .category {
+	margin-top: 20px;
+}
+
+.course_detail #basicInfo .category dt,
+.course_detail #basicInfo .category dd {
+	display: inline;
+	font-weight: bold;
+}
+
+.course_detail #basicInfo .category dd {
+	padding-left: 10px;
+	color: #C00;
+}
+
+.course_detail #basicInfo .lecturer {
+	border: 1px solid #e3e3e3;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.course_detail #basicInfo .lecturer dt {
+	width: 70px;
+	float: left;
+	line-height: 0;
+}
+
+.course_detail #basicInfo .lecturer dd {
+	padding-left: 90px;
+}
+
+.course_detail #basicInfo .lecturer dd.name {
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 14px;
+}
+
+.course_detail #basicInfo .lecturer dd.text {
+	font-size: 81.25%;
+}
+
+.course_detail #basicInfo .lecture_num {
+	margin-top: 30px;
+}
+
+.course_detail #basicInfo .lecture_num dt {
+	font-size: 112.5%;
+	font-weight: bold;
+	float: left;
+}
+
+.course_detail #basicInfo .lecture_num dt span {
+	font-size: 131%;
+	padding-left: 25px;
+}
+
+.course_detail #basicInfo .lecture_num dd {
+	float: right;
+}
+
+.course_detail #basicInfo .lecture_num dd p {
+	display: inline;
+	padding-left: 10px;
+}
+
+.course_detail #basicInfo .lecture_num dd span {
+	font-size: 137.5%;
+	padding-left:5px;
+}
+
+.course_detail #basicInfo .progress {
+	line-height: 0;
+	position: relative;
+	background: url(../img/other/course_detail_img1.gif) no-repeat 0 0;
+	width: 629px;
+	height: 117px;
+	display: block;
+}
+
+.course_detail #basicInfo .progress span {
+	padding-left: 0 !important;
+}
+.course_detail #basicInfo .progress .progress_txt{
+	position: absolute;
+	top: 43px;
+	display: block;
+	text-align: center;
+	font-size: 90%;
+	width: 100%;
+}
+.course_detail #basicInfo .progress .progress_txt .progress_label {
+	font-weight: bold;
+	font-size: 130%;
+	color: #EEBB49 !important;
+}
+.course_detail #basicInfo .progress .progress_txt .progress_innertxt {
+	font-size: 70%;
+}
+.course_detail #basicInfo .progress .progress_bar{
+	position: absolute;
+	top: 76px;
+	left: 30px;
+	display: block;
+	width: 570px;
+	height: 17px;
+}
+
+.course_detail #basicInfo .btn_red {
+	margin-top: 25px;
+	text-align: center;
+}
+
+.course_detail #lecture {
+	margin-top: 25px;
+}
+
+.course_detail #lecture thead th {
+	background: #e9e9e9;
+	padding: 3px 10px;
+	font-size: 125%;
+}
+
+
+.course_detail #lecture tbody .icon {
+	width: 75px;
+	padding: 15px 0;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.course_detail #lecture tbody tr {
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.course_detail #lecture tbody .number {
+	width: 15px;
+	padding: 15px 0;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.course_detail #lecture tbody .content{
+	width: 400px;
+	padding: 15px 0;
+	vertical-align: middle;
+}
+
+.course_detail #lecture tbody .content dt {
+	font-size: 112.5%;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.course_detail #lecture tbody .content .text {
+	font-size: 87.5%;
+	line-height: 1.5;
+}
+
+.course_detail #lecture tbody .content .format,
+.course_detail #lecture tbody .content .time {
+	font-size: 75%;
+	display: inline;
+	padding-right: 10px;
+}
+
+.course_detail #lecture tbody .content .format span {
+	color: #eebb49;
+}
+
+.course_detail #lecture tbody .purchase {
+	width: 130px;
+	padding: 15px 0;
+	vertical-align: middle;
+}
+
+.course_detail #lecture tbody .purchase .price {
+	text-align: center;
+	color: #666;
+}
+
+.course_detail #lecture tbody .purchase .price span {
+	font-size: 187.5%;
+	font-weight: bold;
+}
+
+.course_detail #courseImage {
+	line-height: 0;
+}
+
+.course_detail #priceArea {
+	margin-top: 20px;
+	background: #f3f3f3;
+}
+
+.course_detail #priceArea .price {
+	padding: 0 20px 10px;
+	font-weight: bold;
+}
+
+.course_detail #priceArea .price dt {
+	float: left;
+	padding-top: 25px;
+}
+
+.course_detail #priceArea .price dd {
+	text-align: right;
+	padding-left: 85px;
+	padding-top: 10px;
+}
+
+.course_detail #priceArea .price span {
+	font-size: 187.5%;
+}
+
+.course_detail #priceArea .btn {
+	padding: 20px;
+	border-top: 1px solid #e3e3e3;
+}
+
+.course_detail #priceArea .btn p {
+	width: 130px;
+	float: left;
+}
+
+.course_detail #priceArea .btn p:last-child {
+	float: right;
+}
+
+.course_detail #subContents .unit {
+	margin-top: 25px;
+}
+
+.course_detail #subContents .unit + .unit {
+	border-top: none;
+}
+
+.course_detail #subContents h3 {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	font-size: 112.5%;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.course_detail #subContents .sns {
+	margin-top: 25px;
+	padding-top: 20px;
+	border-top: 1px solid #e3e3e3;
+}
+
+.course_detail #subContents .sns li {
+	float: left;
+}
+
+.course_detail #subContents .sns li + li {
+	margin-left: 15px;
+}
+
+
+#relation {
+	clear: both;
+	padding-top: 60px;
+}
+
+#relation .bx-wrapper {
+	position: relative;
+	max-width: 980px !important;
+}
+
+#relation .bx-wrapper .bx-viewport {
+	background: #fff;
+	overflow: hidden !important;
+}
+
+#relation .bx-wrapper .bx-prev {
+	left: -40px;
+}
+
+#relation .bx-wrapper .bx-next {
+	right: -40px;
+}
+
+/* ------------------------------------------------------
+	カートの中身
+------------------------------------------------------ */
+#cartBox {
+	margin-bottom: 40px;
+}
+
+#cartBox li {
+	float: left;
+	width: 245px;
+	height: 50px;
+	line-height: 50px;
+	color: #9f9f9f;
+	font-size: 142.8%; /* 20px */
+	font-weight: bold;
+	text-align: center;
+}
+
+#cartBox .box {
+	background: url("../img/cart/cartBox01.gif") 0 0 no-repeat;
+}
+
+#cartBox .box.active {
+	color: #fff;
+	background: url("../img/cart/cartBox02.gif") 0 0 no-repeat;
+}
+
+#cartBox .boxEnd {
+	background: #e3e3e3;
+}
+
+#cartBox .boxEnd.active {
+	color: #fff;
+	background: #df6363;
+}
+
+.cartInner .title {
+	padding-bottom: 30px;
+	font-size: 200%; /* 28px */
+}
+
+.cartInner dl.lecturer,
+.buyInner dl.lecturer { /* 購入内容の確認と共通 */
+	margin-bottom: 10px;
+	font-size: 128.5%; /* 18px */
+	font-weight: bold;
+}
+
+.cartInner .lecturer dt,
+.buyInner dl.lecturer dt { /* 購入内容の確認と共通 */ 
+	clear: both;
+	float: left;
+}
+
+.cartInner .lecturer dd,
+.buyInner dl.lecturer dd { /* 購入内容の確認と共通 */
+	padding-left: 4em;
+}
+.cartInner tbody {
+	line-height: 1.2;
+}
+
+.cartInner tbody tr,
+.buyInner tbody tr,/* 購入内容の確認と共通 */
+.cl_lecture_list table tbody tr  { /* 作成済のレクチャー一覧 */
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.cartInner table th,
+.buyInner table th { /* 購入内容の確認と共通 */
+	height: 40px;
+	font-size: 128.5%; /* 18px */
+	background: #e9e9e9;
+}
+
+.cartInner table th.img {
+	width: 220px;
+	padding-left: 30px;
+}
+
+.cartInner table th.courseName {
+	text-align: center;
+}
+
+.cartInner table th.tuitionFee {
+	width: 138px;
+	text-align: center;
+}
+
+.cartInner table th.point {
+	width: 120px;
+	text-align: center;
+}
+
+.cartInner table td {
+	text-align: center;
+}
+
+.cartInner table th.img {
+	padding: 20px 0;
+}
+
+.cartInner table .img span.time,
+.buyInner table .img span.time,
+.complete table .img span.time {
+	display: block;
+	margin-top: 5px;
+}
+
+.cartInner table .number dt {
+	margin-bottom: 5px;
+}
+
+.cartInner table td.courseName,
+.buyInner table td.courseName { /* 購入内容の確認と共通 */
+	padding-top: 20px;
+	padding-right: 15px;
+	padding-left: 8px; 
+	padding-bottom: 15px; 
+	text-align: left;
+}
+
+.cartInner table td.courseName .txt .ttl,
+.buyInner table .txt .ttl,/* 購入内容の確認と共通 */
+.cl_lecture_list table .ttl { /* 作成済のレクチャー一覧と共通 */
+	margin-bottom: 5px;
+	font-size: 142.8%;
+	font-weight: bold;
+}
+
+.cartInner table td.courseName .txt dd{
+	margin-bottom: 5px;
+}
+
+.cartInner table th.delete {
+	width: 90px;
+	text-align: center;
+}
+
+.cartInner table td.tuitionFee,
+.cartInner table td.point {
+	font-size: 200%; /* 28px */
+	font-weight: bold;
+}
+
+.cartInner table td.tuitionFee span,
+.cartInner table td.point span {
+	font-size: 16px;
+}
+
+
+.cart #contents table .btn_black input {/* update *//* update */
+	width: 67px;
+	height: 36px;
+}
+
+
+.cart #contents table .courseBox,/* update */
+.buyInner table .courseBox { /* 購入内容の確認と共通 */
+	font-size: 85.7%; /* 12px */
+}
+
+.cart #contents table .courseBox dt,/* update */
+.cart #contents table .courseBox dd,/* update */
+.buyInner table .courseBox dt, /* 購入内容の確認と共通 */
+.buyInner table .courseBox dd { /* 購入内容の確認と共通 */
+	display:inline-block;
+}
+
+.cart #contents table .courseBox dd {/* update */
+	margin-left: 1px;
+}
+
+.cart #contents table .courseBox li,/* update */
+.buyInner table .courseBox li { /* 購入内容の確認と共通 */
+	float: left;
+	margin-right: 1em;
+}
+
+.cart #contents table .courseBox .number dd,/* update */
+.buyInner table .courseBox .number dd {
+	font-size: 107.1%; /* 15px */
+	font-weight: bold;
+}
+
+.cart #contents .notices dt {/* update */
+	padding-top: 20px;
+	padding-bottom: 12px; 
+	font-size: 128.5%; /* 18px */
+	font-weight: bold;
+}
+
+.cart #contents .notices dd {/* update */
+	line-height: 1.5;
+	margin-bottom: 40px;
+	padding-top: 20px;
+	padding-bottom: 52px;
+	padding-right: 14px; 
+	padding-left: 14px; 
+	border: 1px solid #d3d3d3;
+}
+
+.cart #contents .btn, /* update */
+.payment #contents .btn {
+  padding-left: 90px;
+}
+
+.cart #contents .btn li, /* update */
+.payment #contents .btn li {
+	float: left;
+}
+
+.cart #contents .btn input[type=submit], /* update */
+.payment #contents .btn input[type=submit] {
+	float: left;
+}
+
+.cart #contents .btn_black, /* update */
+.payment #contents .btn_black {
+	margin-right: 20px;
+}
+
+.cart #contents .btn_red[type=submit],/* update */
+.payment #contents .btn_red[type=submit] {
+}
+
+/*　チェックボックス装飾  */
+
+.cart #contents table td.buy {/* update */
+text-align: right;
+}
+
+/*　jQ チェックボックス装飾  */
+.cart #contents input[type="checkbox"] {/* update */
+	display: none;
+}
+.cart #contents input[type="checkbox"] + label{/* update */
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+.cart #contents input[type="checkbox"] + label:before{/* update */
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: -40px;
+	width: 25px;
+	height: 25px;
+	margin-top: -4px;
+	background: url("../img/cart/check_bg.gif") 0 0 no-repeat;
+}
+
+.cart #contents input[type="checkbox"] +label.checked:after {/* update */
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: -40px;
+	width: 25px;
+	height: 25px;
+	margin-top: -4px;
+	background: url("../img/cart/check_bg.gif") 0 bottom no-repeat;
+}
+
+.cart table .courseName span.clNo,
+.buyInner table span.clNo {
+	margin-left: 5px;
+	font-size: 16px;
+}
+
+/* ------------------------------------------------------
+	支払い設定
+------------------------------------------------------ */
+.payment 
+
+/* ------------------------------------------------------
+	購入内容の確認
+------------------------------------------------------ */
+.buyInner .info {
+	margin-top: 35px;
+}
+
+.buyInner .info .ttl {
+	font-weight: bold;
+	font-size: 128.5%; /* 18px */
+}
+
+.buyInner .info dl {
+	width: 600px;
+	border: 1px solid #d3d3d3;
+}
+
+.buyInner .info dl dt {
+	float: left;
+	width: 150px;
+	height: 45px;
+	line-height: 45px;
+	border-right: 1px solid #d3d3d3;
+	text-align: center;
+}
+
+.buyInner .info dl dd {
+	width: 450px;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 170px;
+}
+
+.buyInner .info dl dd span {
+	margin-left: 5px;
+}
+
+.buyInner dl.lecturer {
+	margin-top: 30px;
+}
+
+.buyInner .block {
+	
+}
+
+.buyInner table {
+	width: 980px;
+	text-align: center;
+}
+
+.buyInner table .no,
+.complete table .no {
+	width: 80px;
+	width: 50px;
+	text-align: center;
+}
+
+.buyInner table .point,
+.buyInner table .tuitionFee {
+	width: 150px;
+}
+
+.buyInner table span.fs {
+	font-size: 200%;
+	font-weight: bold;
+}
+
+.buyInner table .img {
+	width: 160px;
+	padding: 20px 0 10px;
+}
+
+.buyInner table .txt {
+	line-height: 1.2;
+	padding: 20px 20px 20px 10px;
+	text-align: left;
+}
+
+.buyInner .sum dl {
+	width: 400px;
+	margin-top: 35px;
+	margin-left: 580px;
+	text-align: right;
+	border-top: 1px solid #d3d3d3;
+	border-right: 1px solid #d3d3d3;
+	border-left: 1px solid #d3d3d3;
+}
+
+.buyInner .sum dl dt {
+	float: left;
+	width: 150px;
+	height: 45px;
+	line-height: 45px;
+	border-right: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+	text-align: center;
+}
+
+.buyInner .sum dl dd {
+	height: 45px;
+	line-height: 45px;
+	padding-left: 250px;
+	padding-right: 20px;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.buyInner .sum dl dd span {
+	font-size: 200%;
+	font-weight: bold;
+}
+
+.buyInner .btn {
+	text-align: center;
+}
+
+.buyInner .btn a{
+	width: 390px;
+	height: 45px;
+	line-height: 45px;
+	margin-top: 35px;
+	padding: 0;
+	font-size: 128.5%;
+	font-weight: bold;
+}
+
+/* ------------------------------------------------------
+	Top(ログイン前)
+------------------------------------------------------ */
+header #headLoginWrapper {
+	position: absolute;
+	top: 47px;
+	right: 0;
+}
+
+header #headLoginWrapper p {
+	display: inline
+}
+
+header #headLoginWrapper label {
+}
+
+header #headLoginWrapper input {
+	height: 30px;
+}
+
+header #headLoginWrapper .textBox {
+	line-height: 30px;
+	padding: 5px;
+	border: 1px solid #e3e3e3;
+}
+
+header #headLoginWrapper .mail input {
+	width: 185px;
+	margin-right: 5px;
+}
+
+header #headLoginWrapper .pass input {
+	width: 152px;
+	margin-right: 5px;
+}
+
+header #headLoginWrapper .btn input{
+	display: inline-block;
+	width: 80px;
+	background: #eebb49;
+	font-weight: bold;
+	border: none;
+	text-align: center;
+}
+
+header #headLoginWrapper .passHelp,
+header #headLoginWrapper .newMember {
+	font-size: 85.7%; /* 12px */
+}
+
+header #headLoginWrapper .newMember {
+	margin-right: 10px;
+	margin-left: 330px;
+}
+
+header #headLoginWrapper .passHelp a,
+header #headLoginWrapper .newMember a {
+	text-decoration: underline;
+}
+
+/* ------------------------------------------------------
+	モーダルウィンドウ(汎用モーダル用) パスワードを忘れた方
+------------------------------------------------------ */
+.modal .generalMain {
+	padding: 35px;
+} 
+
+.modal .generalMain .txt {
+	width: 330px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+
+
+.modal .generalMain .mailAdd dl,
+.password section dl { /* パスワードの再登録と共有 */
+	width: 500px;
+	margin: 20px auto 0;
+	font-size: 114.2%; /* 16px */
+}
+
+.modal .generalMain .mailAdd dl dt {
+	clear: left;
+	width: 8em;
+	height: 45px;
+	line-height: 45px;
+	float: left;
+	vertical-align: middle;
+}
+
+.modal .generalMain .mailAdd dl dd {
+	padding-left: 8em;
+	height: 45px;
+	line-height: 45px;
+	vertical-align: middle;
+}
+
+.modal .generalMain .mailAdd input[type="text"] { 
+	width: 370px;
+	height: 45px;
+	padding: 0 1em;
+	border: 1px solid #bbbbbb;
+}
+
+.modal .generalMain .mailAdd .btn,
+.password section .btn {
+	text-align: center;
+}
+
+.modal .generalMain .mailAdd .btn input,
+.password section .btn input,
+.modal .generalMain .lcPrice .btn input { /* レクチャ作成 */
+	width: 370px;
+	height: 45px;
+	margin: 35px 0 0 0;
+}
+
+/* ------------------------------------------------------
+	モーダルウィンドウ(汎用モーダル用) レクチャ作成
+------------------------------------------------------ */
+.modal .generalMain dl.lcName {
+	width: 700px;
+	margin: 30px 0;
+	padding: 30px 20px;
+	background: #f6f6f6;
+	text-align: center;
+	font-size: 114.2%;
+}
+
+.modal .generalMain dl.lcName dt {
+	float: left;
+	width: 8em;
+}
+
+.modal .generalMain dl.lcName dd {
+	padding-left: 9em;
+	text-align: left;
+}
+
+.modal .generalMain .lcPrice {
+	text-align: center;
+}
+
+.modal .generalMain .lcPrice  input[type="text"]{ 
+	width: 200px;
+	height: 45px;
+	margin: 0 5px;
+}
+
+.category{ 
+	width: 370px;
+	height: 45px;
+	//margin: 0 5px;
+        padding: 0 1em;
+        border: 1px solid #bbbbbb;
+}
+
+/* ------------------------------------------------------
+	パスワードの再登録
+------------------------------------------------------ */
+.password section {
+	width: 720px;
+}
+
+.password section h2.passTtl {
+	margin-bottom: 55px;
+	text-align: center;
+}
+
+.password section dl dt {
+	clear: left;
+	width: 8em;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+	vertical-align: middle;
+}
+
+.password section dl dd {
+	padding-left: 9em;
+	vertical-align: middle;
+}
+
+.password section input[type="text"] {
+	width: 370px;
+	height: 35px;
+	padding: 0 1em;
+	border: 1px solid #bbbbbb;
+}
+
+
+.password section .btn input{
+	margin: 55px 0 0 0;
+}
+
+/* ------------------------------------------------------
+	レクチャー詳細（共通）・レクチャー作成(共通)あり
+------------------------------------------------------ */
+.stWrapper {
+	position: relative;
+}
+
+/* 見出し */
+.stWrapper .stTtl,
+.clWrapper .clTtl { /* レクチャー作成(共通) */
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.stWrapper .stTtl h2.title,
+.clWrapper .clTtl h2.title { /* レクチャー作成(共通) */
+	padding: 0;
+}
+
+.stWrapper .stTtl .lecture_num dt {
+	font-size: 112.5%;
+	font-weight: bold;
+	float: left;
+}
+
+.stWrapper .stTtl .lecture_num dt span {
+	font-size: 131%;
+	padding-left: 25px;
+}
+
+.stWrapper .stTtl .lecture_num dd {
+	float: right;
+}
+
+.stWrapper .stTtl .lecture_num dd p {
+	display: inline;
+	padding-left: 10px;
+}
+
+.stWrapper .stTtl .lecture_num dd span {
+	font-size: 137.5%;
+	padding-left:5px;
+}
+
+/* 左表示部分 */
+
+.stWrapper .stLeft {
+	width: 720px;
+	padding-right: 20px;
+	vertical-align: top;
+}
+
+.stWrapper .stLeft .ttl {
+	margin: 20px 0;
+	font-size: 142.8%; /* 20px */
+	font-weight: bold;
+}
+
+/* NOTES */
+.stWrapper .notes {
+	position: relative;
+	width: 720px;
+	margin: 20px 0 0 0;
+	font-size: 128.5%; /* 18px */
+	font-weight: bold;
+}
+
+.stWrapper .notes span {
+	margin-right: 3px;
+	font-size: 157.1%; /* 22px */
+	vertical-align: middle;
+}
+
+.stWrapper .notes .btn input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0;
+	font-size: 92.8%; /* 13px */
+}
+
+.stWrapper .notes textarea {
+	width: 720px;
+	margin-top: 5px;
+	padding: 20px;
+}
+
+/* 右表示部分 */
+.stWrapper .stList {
+	width: 240px;
+	padding-top: 30px;
+	vertical-align: top;
+}
+
+.stWrapper .stList .page {
+	height: 45px;
+	line-height: 45px;
+	padding-left: 10px;
+	color: #fff;
+	font-size: 128.5%; /* 18px */
+	font-weight: bold;
+	background: #333333;
+}
+
+.stWrapper .stList .page a {
+	color: #fff;
+}
+
+.stWrapper .stList .page li {
+	float: left;
+	margin-right: 12px;
+}
+
+.stWrapper .stList .page li span {
+}
+
+.stWrapper .stList .list a {
+	display: block;
+}
+
+.stWrapper .stList .list a.active,
+.stWrapper .stList .list a:hover {
+	background: #fdf8ec;
+}
+
+.stWrapper .stList .table {
+	height: 112px;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.stWrapper .stList .number {
+	width: 25px;
+	padding-right: 5px;
+	text-align: center;
+}
+
+.stWrapper .stList .table .list_inner {
+	position: relative;
+}
+
+.stWrapper .stList .table .list_inner .listTtl {
+	position: absolute;
+	top: 19px;
+	left: 0;
+	font-size: 121.4%; /* 17px */
+	font-weight: bold;
+}
+
+.stWrapper .stList .table .list_inner .icon {
+	position: absolute;
+	top: 48px;
+	left: 0px;
+}
+
+.stWrapper .stList .table .list_inner .txt01 {
+	position: absolute;
+	top: 44px;
+	left: 58px;
+	font-size: 114.2%; /* 16px */
+	font-weight: bold;
+}
+
+.stWrapper .stList .table .list_inner .yellow {
+	color: #efbf54;
+}
+
+.stWrapper .stList .table .list_inner .txt02 {
+	position: absolute;
+	top: 67px;
+	left: 58px;
+}
+
+.stWrapper .stList .table .list_inner .txt03 {
+	position: absolute;
+	top: 68px;
+	left: 125px;
+}
+
+.stWrapper .stList .table .list_inner .txt02 span,
+.stWrapper .stList .table .list_inner .txt03 span {
+	margin-left: 5px;
+}
+
+.stWrapper p.btn_red a {
+	width: 179px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0;
+	font-size: 114.2%; /* 16px */
+	font-weight: bold;
+}
+
+.stWrapper p.btn_red a.nextBtn {
+	position: absolute;
+	bottom: -60px;
+	left: 0;
+}
+
+/* ------------------------------------------------------
+	レクチャー詳細（動画）
+------------------------------------------------------ */
+.st_movie .img {
+	width: 720px;
+}
+
+/* ------------------------------------------------------
+	レクチャー詳細（未購入レクチャー）
+------------------------------------------------------ */
+.stWrapper .box .price {
+	margin: 20px 0;
+	font-size: 128.5%; /* 18px */
+	font-weight: bold;
+	text-align: right;
+}
+
+.stWrapper .box .price dt {
+	display: inline-block;
+}
+
+.stWrapper .box .price dd {
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.stWrapper .box .price dd span {
+	font-size: 171.4%; /* 24px */
+}
+
+.stWrapper .stLeft .box .btn a {
+	width: 350px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0;
+	font-size: 114.2%; /* 16px */
+	font-weight: bold;
+}
+
+/* ------------------------------------------------------
+	レクチャー作成(共通)
+------------------------------------------------------ */
+.clWrapper .clTtl .lecture_num dt,
+.clWrapper .clTtl .lecture_num dd {
+	display: inline-block;
+	font-weight: bold;
+}
+
+.clWrapper .clTtl .lecture_num dt {
+	font-size: 112.5%;
+}
+
+.clWrapper .clTtl .lecture_num dd {
+	font-size: 131%;
+	padding-left: 25px;
+}
+
+.clWrapper .list {
+	width: 220px;
+	font-size: 114.2%; /* 16px */
+	vertical-align: top;
+}
+
+.clWrapper .list ul {
+	border-top: 1px solid #d3d3d3;
+}
+
+.clWrapper .list .ttl {
+	height: 45px;
+	line-height: 45px;
+	background-color: #e9e9e9;
+	font-weight: bold;
+}
+
+.clWrapper .list ul li {
+	height: 60px;
+	line-height: 60px;
+}
+
+.clWrapper .list ul li a {
+	display: block;
+	border-bottom: 1px solid #d3d3d3
+}
+
+.clWrapper .list ul li.over a,/* update */
+.clWrapper .list ul li a:hover,
+.clWrapper .list ul li a.active {
+	text-decoration: none;
+	background-color: #f3f3f3;/* update */
+	border-top: 1px solid #d3d3d3
+}
+
+.clWrapper .clCnt {
+	padding-left: 40px;
+	vertical-align: top;
+}
+
+.clWrapper .clCnt .clNo {
+	width: 700px;
+	margin: 10px 0 0 0;
+	font-size: 114.2%;
+}
+
+.clWrapper .clCnt .clNo span {
+	margin-left: 10px;
+}
+
+.clWrapper .clCnt .clNo input[type="text"] {
+	width: 500px;
+	height: 35px;
+	margin-left: 15px;
+	padding: 0 1em;
+	border: 1px solid #bbbbbb;
+}
+
+.clWrapper .clCnt p.no {
+	margin-bottom: 10px; 
+}
+
+
+.clWrapper #clLc {
+	padding-top: 60px;
+}
+
+.clWrapper .upload {
+	margin-top: 60px;
+}
+
+.clWrapper .upload h3 {
+	margin-bottom: 10px;
+	font-size: 157.1%; /* 22px */
+	font-weight: bold;
+}
+
+.clWrapper .upload dl dt,
+.clWrapper .upload dl dd {
+	display: inline;
+}
+
+.clWrapper .upload dl dd {
+	margin-left: 10px;
+}
+
+.clWrapper .upload dl dd span {
+	margin: 0 2px;
+}
+
+.clWrapper .upload {
+    position: relative;
+}
+
+/* ------------------------------------------------------
+	レクチャー作成(PDF)
+------------------------------------------------------ */
+.clWrapper .upload .file {
+	width: 520px;
+}
+
+.clWrapper .upload .fileBtn,
+.clWrapper .tblA .fileBtn { /* 講座情報入力 */
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+}
+
+.clWrapper .upload .fileBtn input[type="file"],
+.clWrapper .tblA .fileBtn input[type="file"] { /* 講座情報入力 */
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+.clWrapper .upload  .fileBox {
+	margin: 10px 0;
+	padding: 10px;
+}
+
+/* ------------------------------------------------------
+	レクチャー作成(HTML)
+------------------------------------------------------ */
+.clWrapper .uploadHtml {
+	width: 720px;
+	padding: 20px;
+	font-size: 114.2%; /* 16px */
+}
+
+/* ------------------------------------------------------
+	レクチャー作成(マッシュアップ)
+------------------------------------------------------ */
+.cl_upload_mashup form#clLc .btn_red a {
+	padding: 0;
+}
+
+.cl_upload form#clLc .btn_red a {
+	padding: 0;
+}
+
+
+/* ------------------------------------------------------
+	講座情報入力
+------------------------------------------------------ */
+.clWrapper .tblA .sample a {
+	width: 200px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0;
+}
+
+.clWrapper .tblA textarea {
+	width: 680px;
+	padding: 20px;
+}
+
+.clWrapper .tblA .generalRadio li {
+	display: inline-block;
+}
+
+.clWrapper .tblA .generalRadio li + li {
+	margin-left: 30px;
+}
+
+.clWrapper .tblA .generalRadio input {
+	margin-right: 5px;
+}
+
+.clWrapper .tblA .price input {
+	margin-right: 5px;
+}
+
+.clWrapper .tblA {
+	margin-bottom: 30px;
+	font-size: 16px;
+}
+
+.clWrapper .tblA .btns_select {
+	font-size: 14px;
+}
+
+
+/* ------------------------------------------------------
+	購入済のコース・検討中リスト・作成コース
+------------------------------------------------------ */
+.purchase_list .categoryBox,
+.review_list .categoryBox,
+.create_course .categoryBox {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 27px 0 20px 20px;
+	background: #f6f6f6;
+}
+
+.purchase_list .categoryBox dl,
+.review_list .categoryBox dl,
+.create_course .categoryBox dl {
+	margin-bottom: 20px;
+}
+
+.categoryBox {
+	position: relative;
+}
+
+.categoryBox .cell {
+	width: 240px;
+	vertical-align: top;
+}
+
+.categoryBox .serch {
+	position: absolute;
+	top: 30px;
+	right: 10px;
+}
+
+.purchase_list .categoryBox dl dt,
+.purchase_list .categoryBox dl dd,
+.review_list .categoryBox dl dt,
+.review_list .categoryBox dl dd,
+.create_course .categoryBox dl dt,
+.create_course .categoryBox dl dd {
+	display: inline-block;
+}
+
+.purchase_list .categoryBox dl dt,
+.review_list .categoryBox dl dt,
+.create_course .categoryBox dl dt{
+	font-size: 13px;
+	margin-right: 5px;
+}
+
+.purchase_list .categoryBox select,
+.review_list .categoryBox select,
+.create_course .categoryBox select {
+	width: 220px;
+	height: 34px;
+	line-height: 34px;
+	margin-right: 10px;
+	padding: 0px 5px;
+	border: 1px solid #d3d3d3;
+}
+
+.purchase_list .selection,
+.review_list .selection,
+.create_course .selection {
+	margin-bottom: 10px;
+}
+
+.purchase_list .selection .cell,
+.review_list .selection .cell,
+.create_course .selection .cell {
+	vertical-align: top;
+}
+
+.purchase_list .selection .cell a,
+.review_list .selection .cell a,
+.create_course .selection .cell a {
+	display: block;
+	width: 365px;
+	height: 46px;
+	line-height: 46px;
+	vertical-align: top;
+	font-weight: bold;
+	text-align: center;
+	background: #e0e0e0 left top;
+}
+
+.purchase_list .selection .cell a:hover,
+.review_list .selection .cell a:hover,
+.create_course .selection .cell a:hover {
+	text-decoration: none;
+}
+
+.purchase_list .selection .cell a.active,
+.review_list .selection .cell a.active,
+.create_course .selection .cell a.active {
+	width: 365px;
+	height: 56px;
+	color: #fff;
+	background: url("../img/mypage/categori_on.gif") 0 0 no-repeat;
+}
+
+.purchase_list table,
+.review_list table,
+.create_course table {
+	border-top: 1px solid #d3d3d3;
+}
+
+.purchase_list table tr,
+.review_list table tr,
+.create_course table tr {
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.purchase_list table .number,
+.review_list table .number,
+.create_course table .number {
+	width: 30px;
+	text-align: center;
+	background: #f6f6f6;
+}
+
+.purchase_list table .img,
+.create_course table .img {
+	width: 232px;
+	text-align: center
+}
+
+.purchase_list table .content {
+	line-height: 1.3;
+	padding: 20px 10px 20px 0;
+}
+
+.purchase_list table .content dl dt,
+.review_list table .content dl dt.ttl,
+.create_course .content dl dt {
+	margin-bottom: 5px;
+	font-size: 112.5%;
+	font-weight: bold;
+}
+
+.purchase_list table .content dl dd {
+	display: inline-block;
+	font-size: 87.5%;
+}
+
+.purchase_list table .content dl dd.name,
+.purchase_list table .content dl dd.register {
+	margin-right: 30px;
+}
+
+.purchase_list table .content dl dd.price {
+	margin: 0;
+}
+
+
+.purchase_list table .content dl dd span {
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 114.2%; /* 16px */
+}
+
+.purchase_list table .content dd.table .cell {
+	padding-top: 5px;
+}
+
+.purchase_list table .content dl dd.lname,
+.review_list table .content dl dd.lname{
+	display: block;
+	font-size: 100%;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.purchase_list table .content dd.table .progress2 {
+	background: url(../img/other/course_detail_img3.gif) no-repeat 0 0;
+	width: 340px;
+	height: 35px;
+	position: relative;
+	top: 5px;
+}
+
+.purchase_list table .content dd.table .progress2 span.progress_txt {
+	position: absolute;
+	top: 7px;
+	right: 10px;
+	padding: 0;
+}
+.purchase_list table .content dd.table .progress2 span.progress_txt .progress_txt_little {
+	padding: 0;
+	font-size: 80%;
+}
+.purchase_list table .content dd.table .progress2 span.progress_bar {
+	position: absolute;
+	width: 269px;
+	height: 15px;
+	left: 10px;
+	top: 9px;
+	padding: 0;
+}
+.purchase_list table .content dd.table .progress2 span.progress_bar img {
+}
+
+.purchase_list table .content .btn,
+.create_course table .content .btn {
+	width: 110px;
+	vertical-align: top;
+	margin-top: 1em;
+	text-align: right;
+}
+
+/* ------------------------------------------------------
+	検討中リスト
+------------------------------------------------------ */
+.review_list table .img {
+	width: 222px;
+	text-align: center;
+}
+
+.review_list table .content {
+	line-height: 1.2;
+	padding: 20px 10px 20px 0;
+}
+
+.review_list table .purchase {
+	width: 140px;
+	padding: 20px 0;
+	text-align: right;
+}
+
+.review_list table .content dl dd {
+	font-size: 14px;
+}
+
+.review_list table .content dl dd span {
+	padding-left: 5px;
+}
+
+.review_list table .content dl dd span,
+.review_list table .content .register dd  {
+	font-weight: bold;
+	font-size: 114.2%; /* 16px */
+}
+
+.review_list table .content .register dt {
+	float: left;
+	width: 8em;
+}
+
+.review_list table .content .name,
+.review_list table .content .txt {
+	margin-bottom: 7px;
+}
+	
+.review_list table .content .register dd {
+	padding-left: 7.5em;
+}
+
+.review_list table .purchase .price span {	
+	color: #666;
+	font-size: 187.5%;
+	font-weight: bold;
+}
+
+/* ------------------------------------------------------
+	購入完了
+------------------------------------------------------ */
+.complete .txt {
+	margin-bottom: 20px;
+}
+
+.complete .img {
+	width: 250px;
+}
+
+.complete table .btn {
+	width: 100px;
+}
+
+.complete .register span {
+	vertical-align: middle;
+	font-size: 18px;
+}
+
+.complete .btn input {
+	width: 100px;
+}
+
+.complete .block {
+	margin-bottom: 30px;
+}
+
+.complete .topBack {
+	width: 390px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.complete .topBack a {
+	font-weight: bold;
+}
+
+.complete .register {
+	margin-bottom: 5px;
+
+}
+
+.complete .img {
+	padding: 20px 0;
+}
+
+/* ------------------------------------------------------
+	作成済のレクチャー一覧
+------------------------------------------------------ */
+.cl_lecture_list table {
+	margin-bottom: 30px;
+}
+
+.cl_lecture_list table .number {
+	width: 50px;
+	text-align: center;
+	background: #f6f6f6;
+}
+
+.cl_lecture_list table .icon {
+	width: 170px;
+	padding: 15px 0;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.cl_lecture_list table td.clearfix {
+	width: 250px;
+}
+
+.cl_lecture_list table td.clearfix p {
+	float: left;
+	width: 120px;
+}
+
+.cl_lecture_list table td.clearfix .btn_black a ,
+.cl_lecture_list table td.clearfix .btn_yellow a {
+	width: 100px;
+	margin-left: 20px;
+}
+
+.cl_lecture_list table .price {
+	width: 100px;
+	text-align: center;
+}
+
+.cl_lecture_list table .content {
+	width: 440px;
+	line-height: 1.2;
+}
+
+.cl_lecture_list table .price span {
+	color: #666;
+	font-size: 187.5%;
+	font-weight: bold;
+}
+.cl_lecture_list table .time span {
+	margin-left: 5px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.cl_lecture_list .btnBox {
+	position: relative;
+	height: 45px;
+}
+
+.cl_lecture_list .btnBox .b01 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.cl_lecture_list .btnBox .b03 {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.cl_lecture_list .btnBox .btn a {
+	line-height: 45px;
+	padding: 0;
+}
+
+/* ------------------------------------------------------
+	作成コース
+------------------------------------------------------ */
+.create_course table .img {
+	padding: 10px 0;
+}
+
+.create_course table .content {
+	position: relative;
+	width: 468px;
+	line-height: 1.3;
+	padding: 20px 10px 0 0;
+
+}
+
+.create_course .content dl dt {
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+.create_course table .content dl dd {
+	font-size: 87.5%;
+}
+
+.create_course table .content .register {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.create_course table .content .day {
+	position: absolute;
+	bottom: 10px;
+	left: 195px;
+	text-align: right;
+}
+
+
+.create_course table .content .btn {
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+}
+
+.create_course table .content .register a {
+	font-size: 12px;
+}
+
+
+.create_course table .content .register a {
+	width: 170px;
+}
+
+.create_course table .content .register span.fa {
+	margin-left: 10px;
+}
+
+.create_course table tr.lc {
+	height: 70px;
+	background: #f6f6f6;
+}
+
+.create_course table tr.lc .number2 {
+	width: 90px;
+	padding-right: 20px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.create_course table td.icon {
+	width: 172px;
+	text-align: center;
+}
+
+.create_course table .lcContent .ttl {
+	height: 70px;
+	padding-right: 20px;
+	
+}
+
+.create_course table .lcContent .btn {
+	text-align: right !important;
+	padding-right: 20px;
+}
+
+/* ------------------------------------------------------
+	カテゴリー
+------------------------------------------------------ */
+
+.category .column1 .lectList li {
+	margin-bottom: 20px
+}
+
+/* ------------------------------------------------------
+	モーダルウィンドウ
+------------------------------------------------------ */
+#lean_overlay{
+  position: fixed;
+  z-index: 9999; 
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+}
+
+header #hmenu li.login a{
+	color: #fff;
+	display: block;
+	background-color: #f60;
+	padding: 3px 5px;
+	margin-top: -3px;
+}
+header #hmenu li.login a:hover{
+	background-color: #f90;
+}
+/* コース作成内のトグル仮定義 */
+.modal .cl_toggle{
+	margin-bottom: 20px;
+}
+.modal .cl_toggle li{
+	float: left;
+}
+.modal .cl_toggle li a{
+	display: block;
+	padding: 10px 20px;
+	background-color: #f90;
+	text-align: center;
+	width: 340px;
+	color: #fff;
+	text-decoration: none;
+}
+.modal .cl_toggle li.over a,
+.modal .cl_toggle li a:hover{
+	background-color: #fb0;
+}
+.clMashUp{
+	display: block;
+}
+.pdf_thums li{
+	float: left;
+	margin: 0 16px 10px 0;
+	position: relative;
+}
+.pdf_thums li span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.pdf_thums li.last{
+	margin-right: 0;
+}
+.editplaytime{
+	background-color: #eee;
+	border: 1px solid #ccc;
+	padding: 15px 14px 3px 14px;
+	margin-bottom: 20px;
+}
+.editplaytime .insert_pdf li{
+	float: left;
+	margin: 0 11px 0 0;
+}
+.editplaytime .insert_pdf li span{
+	display: block;
+	text-align: center;
+	margin: -6px 0 4px;
+	font-size: 90%;
+}
+.pdf_thums li:nth-child(8n),
+.editplaytime .insert_pdf li:nth-child(10n){
+	margin-right: 0;
+}
+.editplaytime .insert_pdf_init{
+	text-align: center;
+	padding-bottom: 10px;
+}
+.error_area{
+	border: 1px solid #f00;
+	color: #f00;
+	text-align: center;
+	padding: 7px 10px;
+	display: none;
+	margin-bottom: 20px;
+}
+.media{
+	position: relative;
+}
+.ifloader{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 130px;
+}
+
+/* ----------------------------------------
+  pager
+---------------------------------------- */
+.pager li{
+	margin-right: 5px !important;
+}
+
+/* ----------------------------------------
+  jqueryソート
+---------------------------------------- */
+.fs-hidden {
+    display: none;
+}
+
+
+/* ▼11/25　addition▼ */
+
+/* ------------------------------------------------------
+	新規登録
+------------------------------------------------------ */
+.registration_menu .fs14 {
+	font-size: 14px;
+}
+
+.registration_menu .btns_select label {
+	width: 137px;
+	height: 40px;
+}
+
+.registration_menu .choice {
+	font-size: 12px;
+}
+
+.registration_menu .uName {
+	width: 370px;
+}
+
+.registration_menu .Separate {
+	width: 180px;
+}
+
+.registration_menu select {
+	height: 34px;
+}
+
+.registration_menu .tblA dl dl{
+padding: 0;
+border: 0;
+}
+
+.registration_menu .tblA dl dl dt {
+	width: 8em;
+}
+
+.registration_menu .tblA dl dl dd {
+	width: 20px;
+	padding-left: 8em;
+}
+
+.registration_menu .btns {
+	margin-top: 20px;
+}
+
+.registration_menu .bd {
+	text-decoration: underline;
+}
